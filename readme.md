@@ -6,7 +6,7 @@ Heroku の container を使って、 Docker で動く Mojolicious::Lite のア�
 clone 直後は heroku と紐付いていないので、紐付ける
 
 ```
-heroku git:remote -a serene-lake-43934
+heroku git:remote -a <heroku:apps:name>
 ```
 
 新しく作る場合は `heroku create` で OK
