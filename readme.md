@@ -15,7 +15,7 @@ heroku git:remote -a <heroku:apps:name>
 docker の公式イメージを参考にして、 carton で動作する image を作っておく。
 
 ```
-docker build -t nqounet/perl-carton:5.18.4 - < Dockerfile.carton.5.18.4
+docker build -t nqounet/perl-carton - < Dockerfile.carton
 ```
 
 ## Use Heroku CLI

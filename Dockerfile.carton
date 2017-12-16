@@ -1,0 +1,10 @@
+FROM perl
+
+RUN cpanm Carton
+
+WORKDIR /usr/src/app
+
+ONBUILD COPY cpanfile .
+ONBUILD RUN carton install
+
+ONBUILD COPY . .

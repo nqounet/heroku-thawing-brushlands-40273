@@ -1,4 +1,4 @@
-FROM nqounet/perl-carton:5.18.4
+FROM nqounet/perl-carton
 
 RUN useradd -m -s /bin/bash appuser
 USER appuser
