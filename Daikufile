@@ -1,0 +1,11 @@
+desc 'up';
+task up => sub {
+    sh qw{docker-compose up --build};
+};
+
+desc 'down';
+task down => sub {
+    sh qw{docker-compose down};
+};
+
+task default => sub { sh q{daiku -T} };
